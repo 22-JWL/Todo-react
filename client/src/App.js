@@ -32,13 +32,15 @@ function App() {
     setTodoItems([...todoItems, newItem]);
   };
 
+  const deleteItem = () => {};
+
   return (
     <div className="App">
       <AddTodo addItem={addItem} />
 
       {/* todoItems반복, */}
       {todoItems.map((item) => (
-        <Todo key={item.id} item={item}></Todo>
+        <Todo key={item.id} item={item} deleteItem={deleteItem}></Todo>
       ))}
     </div>
   );

@@ -2,6 +2,8 @@ import React from 'react';
 
 export default function Todo({ item }) {
   const { id, title, done } = item;
+
+  const onDeleteButtonClick = () => {};
   return (
     <div>
       <input
@@ -11,6 +13,7 @@ export default function Todo({ item }) {
         defaultChecked={done}
       />
       <label htmlFor={`todo${id}`}>{title}</label>
+      <button onClick={onDeleteButtonClick}>DELETE</button>
     </div>
   );
 }
