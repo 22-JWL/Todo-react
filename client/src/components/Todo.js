@@ -3,7 +3,10 @@ import React from 'react';
 export default function Todo({ item }) {
   const { id, title, done } = item;
 
-  const onDeleteButtonClick = () => {};
+  const onDeleteButtonClick = () => {
+    deleteItem();
+  };
+
   return (
     <div>
       <input
