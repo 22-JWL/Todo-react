@@ -40,7 +40,7 @@ export default function Todo({ item, deleteItem, updateItem }) {
   };
 
   return (
-    <div>
+    <div className="Todo">
       <input
         type="checkbox"
         name={`todo${id}`}
