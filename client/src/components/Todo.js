@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-export default function Todo({ item }) {
-  const { id, title, done } = item;
+export default function Todo({ item, deleteItem }) {
+  const [todoItem, setTodoItem] = useState(item);
+  const { id, title, done } = todoItem;
 
   const onDeleteButtonClick = () => {
-    deleteItem();
+    deleteItem(todoItem);
   };
 
   return (

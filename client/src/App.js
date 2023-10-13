@@ -32,7 +32,10 @@ function App() {
     setTodoItems([...todoItems, newItem]);
   };
 
-  const deleteItem = () => {};
+  const deleteItem = (targetItem) => {
+    const newTodoItems = todoItems.filter((item) => item.id !== targetItem.id);
+    setTodoItems(newTodoItems);
+  };
 
   return (
     <div className="App">
