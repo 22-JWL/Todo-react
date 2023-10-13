@@ -19,9 +19,9 @@ exports.createTodo = async (req, res) => {
       title: req.body.title,
       done: false,
     });
-    console.log(newTodo);
-    // res.send(newTodo);
-    res.end();
+    // console.log(newTodo);
+    res.send(newTodo);
+    // res.end();//데이터없이 응답을 하는 메서드
   } catch (err) {
     res.send(err);
   }
