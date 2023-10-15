@@ -58,7 +58,7 @@ export default function Todo({ item, deleteItem, updateItem }) {
         onChange={editEventHandler}
         onKeyDown={editKeyEventHandler}
       />
-      <button onClick={onDeleteButtonClick}>DELETE</button>
+      <button className='btn-8' onClick={onDeleteButtonClick}>DELETE</button>
     </div>
   );
 }
