@@ -1,12 +1,76 @@
-.AddTodo {
-  background-color: aqua;
-  text-align: center;
+.App {
+  min-height: 100vh;
+  width: 680px;
+  margin: 0 auto;
 }
 
-.Todo {
-  background-color: blue;
+header {
+  width: 100vh;
   text-align: center;
-  border-radius: 30%;
-  width: 500px;
-  height: 300px;
+  background-color: gray;
+  font-weight: 1000;
+  font-size: 24px;
+  color: blackG;
+  padding: 16px 0;
+  opacity:0.5;
+
+
 }
+
+.todoContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  /* align-items: center; */
+}
+
+.AddTodo {
+  display: flex;
+  width: 100%;
+  margin: 18px 0;
+}
+
+.addInput {
+  width: 100%;
+  height: auto;
+  margin-right: 16px;
+  padding: 12px 8px;
+}
+
+.count {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 18px;
+  color: antiquewhite;
+}
+
+.boxCheck {
+  width: 24px;
+  height: 24px;
+}
+
+.boxContent {
+  width: 100%;
+  margin: 0 16px;
+  padding: 12px 8px;
+}
+
+.todo{
+  display : flex;
+  width : 100%;
+  margin : 12px 0;
+  align-items : center;
+  opacity:0.8;
+
+}
+
+.background{
+  background-image: url(../pexels-philippe-donn-1242764.jpg);
+  // background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+

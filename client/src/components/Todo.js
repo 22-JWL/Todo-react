@@ -40,8 +40,8 @@ export default function Todo({ item, deleteItem, updateItem }) {
   };
 
   return (
-    <div className="Todo">
-      <input
+    <div className="todo">
+      <input className='boxCheck'
         type="checkbox"
         name={`todo${id}`}
         id={`todo${id}`}
@@ -50,7 +50,7 @@ export default function Todo({ item, deleteItem, updateItem }) {
       />
       {/* <label htmlFor={`todo${id}`}>{title}</label> */}
 
-      <input
+      <input className='boxContent'
         type="text"
         value={todoItem.title}
         readOnly={readOnly}

@@ -53,8 +53,13 @@ function App() {
   };
 
   return (
+    <div className='background'>
     <div className="App">
+
+      <header> 오늘의 할 일을 메모해 보세요 ^^ </header>
+      <div className='todoContainer'>
       <AddTodo addItem={addItem} />
+      <div className='count'> 오늘의 Todo : {todoItems.length}</div>
 
       {/* todoItems반복, */}
       {todoItems.map((item) => (
@@ -65,6 +70,8 @@ function App() {
           updateItem={updateItem}
         ></Todo>
       ))}
+      </div>
+    </div>
     </div>
   );
 }
